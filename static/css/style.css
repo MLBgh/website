@@ -1075,6 +1075,13 @@ html {
     margin: 0 auto;
     overflow: visible;
   }
+  @media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: auto;
+    }}
   @media (min-width: 641px) {
     .hero {
       text-align: left;
