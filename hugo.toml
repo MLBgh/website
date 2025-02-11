@@ -1,6 +1,6 @@
 baseURL = 'https://mlbgh.github.io/website/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Dropr - On-demand movers'
 theme = 'Agnes'
 canonifyURLs = true
 
