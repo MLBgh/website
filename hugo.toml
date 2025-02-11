@@ -24,6 +24,9 @@ theme = 'Agnes'
 		URL = "#"
 		weight = 4
 
+[params]
+  staticPath = "/stabil-agil"
+
 [params.social]
 	TwitterURL = "https://twitter.com/podbharati"
 	GoogleURL = "http://google.com"
