@@ -2,6 +2,7 @@ baseURL = 'https://mlbgh.github.io/website/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'Agnes'
+canonifyURLs = true
 
 [menu]
 	[[menu.main]]
