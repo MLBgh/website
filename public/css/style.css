@@ -1034,7 +1034,7 @@ html {
     color: #fff;
   }
   .hero {
-    background-image: url("/images/background_dropr.jpg") !important;
+    background-image: url("../images/background.png") !important;
     background-size: cover; /* 80% of the section width */
     background-position: center;
     background-repeat: no-repeat;

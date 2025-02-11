@@ -25,8 +25,8 @@ canonifyURLs = true
 		URL = "#"
 		weight = 4
 
-[params]
-  staticPath = "/stabil-agil"
+[params.hero]
+    background = "images/background_dropr.jpg"
 
 [params.social]
 	TwitterURL = "https://twitter.com/podbharati"
@@ -38,6 +38,7 @@ canonifyURLs = true
 	LeadDescription = "Help us shape Dropr! 🚚💨 We’re conducting a market study to understand how Montrealers move bulky items. Share your experience by filling out our quick questionnaire and be part of building a smarter transport solution! 👉 "
 	ButtonCaption = "Forms"
 	ButtonURL = "https://forms.gle/YnrDLiW4nrVGoMaN7"
+    Image = "images/background.png"
 
     ################### Feature Columns (do not exceed 4) ####################
 
