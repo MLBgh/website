@@ -1,0 +1,53 @@
+baseURL = 'https://mlbgh.github.io/website/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'Agnes'
+
+[menu]
+	[[menu.main]]
+		Name = "Contact"
+		URL = "#"
+		weight = 1
+	
+	[[menu.main]]
+		Name = "About us"
+		URL = "#"
+		weight = 2
+	
+	[[menu.main]]
+		Name = "FAQ's"
+		URL = "#"
+		weight = 3
+	
+	[[menu.main]]
+		Name = "Support"
+		URL = "#"
+		weight = 4
+
+[params.social]
+	TwitterURL = "https://twitter.com/podbharati"
+	GoogleURL = "http://google.com"
+	FacebookURL = "https://facebook.com/podbharati"
+
+[params.content]
+	LeadTitle = "The Smart Way to Move Big Things"
+	LeadDescription = "Help us shape Dropr! 🚚💨 We’re conducting a market study to understand how Montrealers move bulky items. Share your experience by filling out our quick questionnaire and be part of building a smarter transport solution! 👉 "
+	ButtonCaption = "Forms"
+	ButtonURL = "https://forms.gle/YnrDLiW4nrVGoMaN7"
+
+    ################### Feature Columns (do not exceed 4) ####################
+
+[[params.feature]]
+	FeatureTitle = "Marketplace Pickup & Delivery"
+	FeatureDescription = "Easily transport bulky items bought on marketplaces like Facebook Marketplace, Kijiji, or Craigslist without the hassle of renting a truck."
+	FeatureImage = "images/shop.png"
+	
+[[params.feature]]
+	FeatureTitle = "Affordable & Flexible Moving"
+	FeatureDescription = "Need to move apartments or relocate furniture? Get a reliable transporter at a fraction of the cost of traditional movers."
+	FeatureImage = "images/van.png"
+
+[[params.feature]]
+	FeatureTitle = "Earn Money Easily as a Driver"
+	FeatureDescription = "Have a truck or large vehicle? Turn it into an income stream by accepting transport requests on your schedule."
+	FeatureImage = "images/wallet.png"
