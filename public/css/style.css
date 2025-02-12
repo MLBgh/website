@@ -1004,12 +1004,15 @@ html {
   .site-header {
     position: relative;
     padding: 24px 0;
+    width: 100%;
+    background: #f7f7f7;
   }
   .site-header-inner {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #f7f7f7;
   }
   .header-links {
     display: inline-flex;
@@ -1034,7 +1037,7 @@ html {
     color: #fff;
   }
   .hero {
-    background-image: url("../images/background.png") !important;
+    background-image: url("../images/background_dropr.png") !important;
     background-size: cover; /* 80% of the section width */
     background-position: center;
     background-repeat: no-repeat;
