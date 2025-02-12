@@ -36,7 +36,7 @@ canonifyURLs = true
 [params.content]
 	LeadTitle = "The Smart Way to Move Big Things"
 	LeadDescription = "Help us shape Dropr! 🚚💨 We're conducting a market study to understand how Montrealers move bulky items. Share your experience and help build a smarter transport solution! 🚀"
-	ButtonCaption = "Start our questionnaire here"
+	ButtonCaption = "Start our questionnaire"
 	ButtonURL = "https://forms.gle/YnrDLiW4nrVGoMaN7"
 
     ################### Feature Columns (do not exceed 4) ####################
