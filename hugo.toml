@@ -32,6 +32,7 @@ canonifyURLs = true
 	TwitterURL = "https://twitter.com/podbharati"
 	GoogleURL = "http://google.com"
 	FacebookURL = "https://facebook.com/podbharati"
+	InstagramURL = "https://www.instagram.com/dropr.app/"
 
 [params.content]
 	LeadTitle = "The Smart Way to Move Big Things"
