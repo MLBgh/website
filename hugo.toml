@@ -7,7 +7,7 @@ canonifyURLs = true
 [menu]
 	[[menu.main]]
 		Name = "Contact"
-		URL = "#"
+		URL = "/contact/"
 		weight = 1
 	
 	[[menu.main]]
