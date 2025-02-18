@@ -24,7 +24,11 @@
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
 	<body class="is-boxed has-animations">
-		<div class="body-wrap boxed-container">		
+		
+		<div id="welcome-animation">
+			<img src="https://mlbgh.github.io/website/gif/welcome_animation.gif" class="welcome-animation">
+		</div>		
+		<div class="body-wrap boxed-container">
 		<header class="site-header">
     <div class="container">
         <div class="site-header-inner">
@@ -39,7 +43,8 @@
     </div>
 </header>
 			<main>
-				
+				<div class="main-text">
+					
 			<section class="hero">
 				<div class="container">	
 					<div class="hero-inner">
@@ -166,7 +171,8 @@
                     </div>
 				</div>
 			</section>
-				
+   
+				</div>   				
 			</main>		
 		<footer class="site-footer text-light">
     <div class="container">
@@ -245,6 +251,29 @@
     </div>
 </footer>
 		</div>
-		<script src="https://mlbgh.github.io/website/js/main.min.js"></script>
+		<script src="https://mlbgh.github.io/website/js/main.min.js"></script> 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let welcomeScreen = document.getElementById('welcome-animation');
+        let mainContent = document.querySelector('.body-wrap.boxed-container');
+
+        setTimeout(function () {
+            if (welcomeScreen && mainContent) {
+                
+                welcomeScreen.style.opacity = '0';
+                welcomeScreen.style.transition = 'opacity 1s ease-in-out';
+  
+                setTimeout(function () {
+                    
+                    welcomeScreen.style.display = 'none';
+                    mainContent.style.display = 'block';  
+                    mainContent.classList.add("show-body"); 
+                }, 1000); 
+            }
+        }, 2000); 
+    });
+</script>
+  
 	</body>
 </html>
