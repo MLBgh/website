@@ -1,1 +1,24 @@
-<script src="/js/main.min.js"></script>
+<script src="/js/main.min.js"></script> <!-- Include main JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let welcomeScreen = document.getElementById('welcome-animation');
+        let mainContent = document.querySelector('.body-wrap.boxed-container');
+
+        setTimeout(function () {
+            if (welcomeScreen && mainContent) {
+                // Fade out the welcome animation
+                welcomeScreen.style.opacity = '0';
+                welcomeScreen.style.transition = 'opacity 1s ease-in-out';
+  
+                setTimeout(function () {
+                    // Hide the welcome animation completely
+                    welcomeScreen.style.display = 'none';
+                    mainContent.style.display = 'block';  // Ensure main content is visible
+                    mainContent.classList.add("show-body"); // Add the class to reveal content
+                }, 1000); // Delay to ensure transition completes
+            }
+        }, 2000); // Wait 3 seconds before hiding animation
+    });
+</script>
+  

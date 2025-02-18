@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-		<head>
+		<head><script src="/website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=website/livereload" data-no-instant defer></script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">		
@@ -19,18 +19,22 @@
 		
 		<title>Dropr - On-demand movers | 404 Page not found</title>
 		<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700|Mukta:500,700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://mlbgh.github.io/website/css/style.css">		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/website/css/style.css">		
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
 	<body class="is-boxed has-animations">
-		<div class="body-wrap boxed-container">		
+		
+		<div id="welcome-animation">
+			<img src="http://localhost:1313/website/gif/welcome_animation.gif" class="welcome-animation">
+		</div>		
+		<div class="body-wrap boxed-container">
 		<header class="site-header">
     <div class="container">
         <div class="site-header-inner">
             <div class="brand header-brand">
                 <h1 class="m-0">
-                    <a href="https://mlbgh.github.io/website/">
-                        <img src="https://mlbgh.github.io/website/images/logo_no_background.png" alt="Dropr - On-demand movers" style="max-height: 90px; width: auto;">
+                    <a href="http://localhost:1313/website/">
+                        <img src="http://localhost:1313/website/images/logo_no_background.png" alt="Dropr - On-demand movers" style="max-height: 90px; width: auto;">
                     </a>
                 </h1>
             </div>
@@ -38,26 +42,28 @@
     </div>
 </header>
 			<main>
-				
+				<div class="main-text">
+					
   <main id="main">
     <div style="padding: 50px; text-align:center;">		
-      <h3 id="title">Sorry we could not find what you were looking for.<br/><a href="https://mlbgh.github.io/website/"><i>Click here for the home page</i></a></h3>
+      <h3 id="title">Sorry we could not find what you were looking for.<br/><a href="http://localhost:1313/website/"><i>Click here for the home page</i></a></h3>
     </div>
   </main>
-				
+   
+				</div>   				
 			</main>		
 		<footer class="site-footer text-light">
     <div class="container">
         <div class="site-footer-inner has-top-divider">
             <div class="brand footer-brand">
                 <a href="#">
-                    <img src="https://mlbgh.github.io/website/images/logo-white.png" alt="Footer Logo" class="footer-logo" style="max-height: 100px; width: auto;">
+                    <img src="http://localhost:1313/website/images/logo-white.png" alt="Footer Logo" class="footer-logo" style="max-height: 100px; width: auto;">
                 </a>
             </div>
             					<ul class="footer-links list-reset">
 						
 						<li>
-							<a class="nav-link" href="https://mlbgh.github.io/website/contact/">
+							<a class="nav-link" href="http://localhost:1313/website/contact/">
 							
 							Contact
 							</a>
@@ -123,6 +129,29 @@
     </div>
 </footer>
 		</div>
-		<script src="https://mlbgh.github.io/website/js/main.min.js"></script>
+		<script src="http://localhost:1313/website/js/main.min.js"></script> 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let welcomeScreen = document.getElementById('welcome-animation');
+        let mainContent = document.querySelector('.body-wrap.boxed-container');
+
+        setTimeout(function () {
+            if (welcomeScreen && mainContent) {
+                
+                welcomeScreen.style.opacity = '0';
+                welcomeScreen.style.transition = 'opacity 1s ease-in-out';
+  
+                setTimeout(function () {
+                    
+                    welcomeScreen.style.display = 'none';
+                    mainContent.style.display = 'block';  
+                    mainContent.classList.add("show-body"); 
+                }, 1000); 
+            }
+        }, 2000); 
+    });
+</script>
+  
 	</body>
 </html>

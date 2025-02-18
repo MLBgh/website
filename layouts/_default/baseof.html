@@ -2,10 +2,16 @@
 <html lang="en">
 	{{ partial "head.html" . }}
 	<body class="is-boxed has-animations">
-		<div class="body-wrap boxed-container">		
+		<!-- Welcome Animation Section -->
+		<div id="welcome-animation">
+			<img src="/gif/welcome_animation.gif" class="welcome-animation">
+		</div>		
+		<div class="body-wrap boxed-container">
 		{{ partial "header.html" . }}
 			<main>
-				{{ block "main" . }}{{ end }}				
+				<div class="main-text">
+					{{ block "main" . }}{{ end }}   
+				</div>   				
 			</main>		
 		{{ partial "footer.html" . }}
 		</div>
